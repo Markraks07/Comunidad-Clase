@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deberes - Clase Virtual</title>
+    <link rel="stylesheet" href="css/deberes.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">Clase Virtual</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="chat.html">Chat</a></li>
+            <li><a href="deberes.html">Deberes</a></li>
+            <li><a href="admin.html">Admin</a></li>
+            <li><button class="btn-logout" id="logoutBtn">Cerrar sesión</button></li>
+        </ul>
+    </nav>
+
+    <div class="crear-tarea" id="crearTareaDiv">
+        <input type="text" id="tareaTitulo" placeholder="Título de la tarea">
+        <textarea id="tareaDescripcion" placeholder="Descripción"></textarea>
+        <input type="file" id="tareaAdjunto" accept="image/*">
+        <input type="date" id="tareaFecha">
+        <button id="publicarTareaBtn">Publicar tarea</button>
+    </div>
+
+    <h2>Tareas Publicadas</h2>
+    <div class="tareas-container" id="tareasContainer"></div>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>

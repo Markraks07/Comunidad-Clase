@@ -1,0 +1,96 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('https://t4.ftcdn.net/jpg/00/59/95/89/360_F_59958917_1SvEPqvKnrGr68THJ35hqQUiHwQ6WhCN.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: rgba(0,0,0,0.7);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    flex-wrap: wrap;
+}
+
+.btn-logout {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 8px;
+    background: #ffcc00;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.nav-links a, .nav-links .btn {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover, .nav-links .btn:hover {
+    color: #ffcc00;
+    transform: scale(1.05);
+}
+
+/* Navbar compartido */
+
+.container { max-width: 1200px; margin: auto; padding: 2rem; }
+
+.admin-tareas, .admin-alumnos {
+    background: rgba(0,0,0,0.6);
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
+
+#alumnosContainer div, .tareas-container .tarea {
+    padding: 0.7rem;
+    margin-bottom: 0.5rem;
+    background: rgba(255,255,255,0.1);
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#alumnosContainer button, .tareas-container .tarea button {
+    padding: 0.3rem 0.5rem;
+    border: none;
+    border-radius: 5px;
+    background: #ffcc00;
+    color: #000;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 5px;
+}
+
+#alumnosContainer button:hover, .tareas-container .tarea button:hover {
+    background: #e6b800;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .admin-tareas, .admin-alumnos { padding: 0.5rem; }
+    #alumnosContainer div, .tareas-container .tarea { flex-direction: column; align-items: flex-start; gap: 0.3rem; }
+}

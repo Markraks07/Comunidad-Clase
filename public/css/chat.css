@@ -1,0 +1,108 @@
+/* Navbar compartido */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('https://t4.ftcdn.net/jpg/00/59/95/89/360_F_59958917_1SvEPqvKnrGr68THJ35hqQUiHwQ6WhCN.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+.btn-logout {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 8px;
+    background: #ffcc00;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: rgba(0,0,0,0.7);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    flex-wrap: wrap;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.nav-links a, .nav-links .btn {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover, .nav-links .btn:hover {
+    color: #ffcc00;
+    transform: scale(1.05);
+}
+
+/* Contenedor de chat */
+.chat-container {
+    background: rgba(0,0,0,0.6);
+    padding: 1rem;
+    border-radius: 10px;
+    height: 400px;
+    overflow-y: auto;
+    margin-bottom: 1rem;
+}
+
+.chat-container div {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    background: rgba(255,255,255,0.1);
+    border-radius: 8px;
+}
+
+.chat-input {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+}
+
+.chat-input button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 8px;
+    background: #ffcc00;
+    color: #000;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.chat-input button:hover {
+    background: #e6b800;
+    transform: scale(1.05);
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+    .chat-input { flex-direction: column; }
+    .chat-input button { width: 100%; }
+    .chat-container { height: 300px; }
+}

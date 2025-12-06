@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Login / Registro</title>
+    <style>
+        body { font-family: Arial, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; }
+        #formContainer { width: 300px; padding: 20px; border: 1px solid #ccc; border-radius: 10px; }
+        input, button { width: 100%; margin: 5px 0; padding: 10px; }
+        #toggleForm { text-align: center; display: block; margin-top: 10px; cursor: pointer; color: blue; }
+    </style>
+</head>
+<body>
+    <div id="formContainer">
+        <h2 id="form-title">Iniciar Sesión</h2>
+        <input type="email" id="email" placeholder="Correo electrónico">
+        <input type="password" id="password" placeholder="Contraseña">
+        <button id="submitBtn">Iniciar Sesión</button>
+        <a href="#" id="toggleForm">Regístrate</a>
+    </div>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>

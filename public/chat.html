@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat - Clase Virtual</title>
+    <link rel="stylesheet" href="css/chat.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">Clase Virtual</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="chat.html">Chat</a></li>
+            <li><a href="deberes.html">Deberes</a></li>
+            <li><a href="admin.html">Admin</a></li>
+            <li><button class="btn-logout" id="logoutBtn">Cerrar sesión</button></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Chat Grupal</h1>
+        <div id="chatContainer" class="chat-container"></div>
+
+        <div class="chat-input">
+            <input type="text" id="chatMessage" placeholder="Escribe tu mensaje...">
+            <button id="sendBtn">Enviar</button>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>

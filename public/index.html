@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel Principal</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        #chatContainer { border: 1px solid #ccc; height: 200px; overflow-y: auto; padding: 5px; margin-bottom: 10px; }
+        .tarea { border: 1px solid #ccc; padding: 10px; margin-bottom: 10px; border-radius: 5px; }
+        .comentarios { margin-top: 5px; padding-left: 10px; }
+        button { margin-top: 5px; }
+        #alumnosContainer div { margin-bottom: 5px; }
+    </style>
+</head>
+<body>
+
+    <h1>Bienvenido</h1>
+    <button id="logoutBtn">Cerrar Sesión</button>
+
+    <h2>Chat</h2>
+    <div id="chatContainer"></div>
+    <input type="text" id="chatMessage" placeholder="Escribe un mensaje">
+    <button id="sendBtn">Enviar</button>
+
+    <h2>Publicar Tarea</h2>
+    <input type="text" id="tareaTitulo" placeholder="Título de la tarea">
+    <textarea id="tareaDescripcion" placeholder="Descripción"></textarea>
+    <input type="date" id="tareaFecha">
+    <input type="file" id="tareaAdjunto">
+    <button id="publicarTareaBtn">Publicar</button>
+
+    <h2>Tareas</h2>
+    <div id="tareasContainer"></div>
+
+    <h2>Panel Admin - Usuarios</h2>
+    <div id="alumnosContainer"></div>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
